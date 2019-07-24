@@ -37,7 +37,7 @@ public class EchoApplication {
     @EventMapping
     public Message handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
         System.out.println("event: " + event);
-        final String originalMessageText = event.getMessage().getText();
+        final String originalMessageText = "line://app/1601902398-VA5ZBpWX";
         return new TextMessage(originalMessageText);
     }
 
